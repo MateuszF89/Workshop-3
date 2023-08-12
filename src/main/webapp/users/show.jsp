@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<%@ include file="/header.jsp" %>
+<%@ include file="/users/header.jsp" %>
 
 <!-- Begin Page Content -->
 <div class="container-fluid">
@@ -75,5 +75,5 @@
 <!-- End of Main Content -->
 
 
-<%@ include file="/footer.jsp" %>
+<%@ include file="/users/footer.jsp" %>
 
