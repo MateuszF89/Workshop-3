@@ -40,9 +40,9 @@
                                 <td>${user.userName}</td>
                                 <td>${user.email}</td>
                                 <td>
-                                    <button href='' class='btn btn-danger'>Usuń</button>
-                                    <button href='' class='btn btn-primary'>Edytuj</button>
-                                    <button href='' class='btn btn-success'>Pokaż</button>
+                                    <a href='<c:url value="/user/delite?id=${user.id}"/>' class='btn btn-danger'>Usuń</>
+                                    <a href='<c:url value="/user/edit?id=${user.id}"/>' class='btn btn-primary'>Edytuj</>
+                                    <a href='<c:url value="/user/show?id=${user.id}"/>' class='btn btn-success'>Pokaż</a>
                                 </td>
                             </tr>
                         </c:forEach>
