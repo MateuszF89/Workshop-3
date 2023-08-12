@@ -41,7 +41,7 @@ public class UserDao {
         return BCrypt.hashpw(password, BCrypt.gensalt());
     }
 
-    public static User read(int userId) {
+    public User read(int userId) {
         try (Connection conn = DbUtil.getConnection()) {
             PreparedStatement statement = conn.prepareStatement(FIND_USER_QUERY);
             statement.setInt(1, userId);
